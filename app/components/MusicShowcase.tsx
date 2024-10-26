@@ -62,7 +62,7 @@ const featuredMusic: Track[] = [
     style: "Rock",
     duration: "4:02",
     height: "h-[420px]",
-    image: "https://images.unsplash.com/photo-1498038432885-c6f3f1f1912ee?w=800&q=80",
+    image: "https://images.unsplash.com/photo-1498038432885-c6f3f1b912ee?w=800&q=80",
     plan: "Pro" as Plan
   },
 ];
