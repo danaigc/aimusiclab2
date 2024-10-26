@@ -7,8 +7,7 @@ import {
   Loader2, 
   Music2, 
   Wand2, 
-  Sparkles, 
-  Wave 
+  Sparkles,
 } from "lucide-react";
 import { StyleSelector } from "./MusicGenerationForm/StyleSelector";
 import { LyricsInput } from "./MusicGenerationForm/LyricsInput";

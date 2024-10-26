@@ -1,24 +1,10 @@
 "use client";
 
-import { Button } from "@/components/ui/button";
-import { Card } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
-import { Progress } from "@/components/ui/progress";
-import {
-  DropdownMenu,
-  DropdownMenuContent,
-  DropdownMenuItem,
-  DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu";
-import { 
-  Music2, 
-  Clock, 
-  Download, 
-  Share2,
-  MoreHorizontal,
-  Heart,
-  Play,
-} from "lucide-react";
+import {Button} from "@/components/ui/button";
+import {Card} from "@/components/ui/card";
+import {Badge} from "@/components/ui/badge";
+import {DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger,} from "@/components/ui/dropdown-menu";
+import {Clock, Download, Heart, MoreHorizontal, Music2, Play, Share2,} from "lucide-react";
 
 interface GenerationHistoryCardProps {
   index: number;
@@ -94,7 +80,7 @@ export function GenerationHistoryCard({ index }: GenerationHistoryCardProps) {
               <span className="text-muted-foreground">Generating...</span>
               <span className="text-primary">78%</span>
             </div>
-            <Progress value={78} className="h-2" />
+            {/*<Progress value={78} className="h-2" />*/}
           </div>
         )}
 

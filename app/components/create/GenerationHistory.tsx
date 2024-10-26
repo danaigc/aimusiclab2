@@ -6,27 +6,30 @@ import { GenerationHistoryCard } from "./GenerationHistoryCard";
 import { History } from "lucide-react";
 
 export function GenerationHistory() {
-  const items = Array.from({ length: 5 }, (_, index) => index);
+    const items = Array.from({ length: 5 }, (_, index) => index);
 
-  return (
-    <div className="h-full flex flex-col">
-      <div className="flex items-center justify-between mb-6">
-        <div className="flex items-center gap-2">
-          <History className="w-5 h-5 text-primary" />
-          <h2 className="text-xl font-semibold">History</h2>
-        </div>
-        <Button variant="ghost" size="sm">
-          View All
-        </Button>
-      </div>
+    return (
+        <div className="h-full flex flex-col">
+            <div className="flex items-center justify-between mb-6">
+                <div className="flex items-center gap-2">
+                    <History className="w-5 h-5 text-primary" />
+                    <h2 className="text-xl font-semibold">History</h2>
+                </div>
+                <Button variant="ghost" size="sm">
+                    View All
+                </Button>
+            </div>
 
-      <ScrollArea className="flex-1 -mx-6 px-6">
-        <div className="space-y-4 pr-4">
-          {items.map((index) => (
-            <GenerationHistoryCard key={index} index={index} />
-          ))}
+            <ScrollArea className="flex-1 -mx-6 px-6">
+                <div className="space-y-4 pr-4">
+                    {items.map((index) => (
+                        <GenerationHistoryCard
+                            key={index}
+                            index={index}
+                        />
+                    ))}
+                </div>
+            </ScrollArea>
         </div>
-      </ScrollArea>
-    </div>
-  );
+    );
 }

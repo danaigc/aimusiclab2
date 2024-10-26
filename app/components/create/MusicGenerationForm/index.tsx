@@ -7,8 +7,7 @@ import {
   Loader2, 
   Music2, 
   Wand2, 
-  Sparkles, 
-  Waveform 
+  Sparkles
 } from "lucide-react";
 import { StyleSelector } from "./StyleSelector";
 import { LyricsInput } from "./LyricsInput";
@@ -39,7 +38,7 @@ export function MusicGenerationForm({
     <Tabs defaultValue="lyrics" className="w-full">
       <TabsList className="grid w-full grid-cols-3 mb-8">
         <TabsTrigger value="lyrics" className="gap-2">
-          <Waveform className="h-4 w-4" />
+          {/*<Waveform className="h-4 w-4" />*/}
           <span className="hidden sm:inline">From Lyrics</span>
           <span className="sm:hidden">Lyrics</span>
         </TabsTrigger>

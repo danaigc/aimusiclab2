@@ -29,7 +29,7 @@ export default function CreatePage() {
           <h1 className="text-3xl font-bold mb-8 bg-gradient-to-r from-primary to-purple-500 bg-clip-text text-transparent">
             Create Your Music
           </h1>
-          
+
           <MusicGenerationForm
             isGenerating={isGenerating}
             selectedStyle={selectedStyle}
@@ -43,12 +43,12 @@ export default function CreatePage() {
         </div>
       </div>
 
-      {/* History Panel - Desktop */}
+       History Panel - Desktop
       <div className="hidden lg:block w-[400px] bg-background border-l p-6">
         <GenerationHistory />
       </div>
 
-      {/* History Panel - Mobile */}
+       History Panel - Mobile
       <div className="lg:hidden fixed bottom-4 right-4 z-50">
         <Sheet>
           <SheetTrigger asChild>
