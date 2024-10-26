@@ -43,12 +43,12 @@ export default function CreatePage() {
         </div>
       </div>
 
-       History Panel - Desktop
-      <div className="hidden lg:block w-[400px] bg-background border-l p-6">
+       {/*History Panel - Desktop*/}
+      <div className="hidden lg:block w-[400px] bg-background border-l p-6 mr-24 my-6 rounded-2xl">
         <GenerationHistory />
       </div>
 
-       History Panel - Mobile
+     {/*  History Panel - Mobile
       <div className="lg:hidden fixed bottom-4 right-4 z-50">
         <Sheet>
           <SheetTrigger asChild>
@@ -65,7 +65,7 @@ export default function CreatePage() {
             <GenerationHistory />
           </SheetContent>
         </Sheet>
-      </div>
+      </div>*/}
     </div>
   );
 }
